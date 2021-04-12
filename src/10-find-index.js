@@ -11,23 +11,24 @@
  * For ([1, 2, 3], 2) should return 1
  *
  */
- function findIndex(array, value) {
-  let start = 0;
-  let end = array.length-1;
-  let pivot = 0;
+function findIndex(/* array, value */) {
+  throw new Error('Not implemented');
+  // let start = 0;
+  // let end = array.length - 1;
+  // let pivot = 0;
 
-  do {
-    pivot = Math.floor((start + end) / 2);
- if (value < array[pivot]) {
-      end = pivot;
-      pivot = start;
-    } 
-    if (value > array[pivot]){
-      start = pivot;
-    }
-  } while (array[pivot] !== value);
+  // do {
+  //   pivot = Math.floor((start + end) / 2);
+  //   if (value < array[pivot]) {
+  //     end = pivot;
+  //     pivot = start;
+  //   }
+  //   if (value > array[pivot]) {
+  //     start = pivot;
+  //   }
+  // } while (array[pivot] !== value);
 
-  return pivot;
+  // return pivot;
 }
 
 module.exports = findIndex;
